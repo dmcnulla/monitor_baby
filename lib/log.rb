@@ -1,8 +1,8 @@
 require_relative 'checker.rb'
 
-module ServiceMonitor
+module MonitorBaby
   # Log class checks for logs
-  class Log < ServiceMonitor::Checker
+  class Log < MonitorBaby::Checker
     DEFAULT_LOG_FILE = 'logs/test.log'
     DEFAULT_ENTRIES = ['ERROR']
     DEFAULT_NAME = 'log_checker'

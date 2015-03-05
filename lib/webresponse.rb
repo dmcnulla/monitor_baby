@@ -1,7 +1,7 @@
 require 'net/http'
 require 'uri'
 
-module ServiceMonitor
+module MonitorBaby
   # WebResponse checkers validates a return from a rest call such as healthcheck
   class WebResponse < Web
     DEFAULT_URL = 'http://localhost:80/'

@@ -12,4 +12,4 @@ require_relative '../../lib/entry_log.rb'
 require_relative '../../lib/log.rb'
 require_relative 'utility.rb'
 
-include ServiceMonitor
+include MonitorBaby

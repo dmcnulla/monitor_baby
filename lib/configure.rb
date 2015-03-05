@@ -1,6 +1,6 @@
 require 'yaml'
 
-module ServiceMonitor
+module MonitorBaby
   # Configure class
   class Configure
     attr_accessor :config, :obj

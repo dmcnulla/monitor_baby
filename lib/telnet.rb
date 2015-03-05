@@ -1,7 +1,7 @@
 require 'socket'
 require 'timeout'
 
-module ServiceMonitor
+module MonitorBaby
 	# Telnet checker verifies a port is open on a host
   class Telnet < Checker
     DEFAULT_HOST = 'localhost'

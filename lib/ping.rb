@@ -1,7 +1,7 @@
 require 'net/ping'
 require_relative 'checker.rb'
 
-module ServiceMonitor
+module MonitorBaby
   # Checker for pinging a server to see if it's reachable.
   class Ping < Checker
     DEFAULT_HOST = 'localhost'

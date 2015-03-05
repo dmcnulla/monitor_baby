@@ -1,7 +1,7 @@
 TIME_FORMAT = '%Y%m%d %H%M%S'
 MAX_LOGS = 600
 
-module ServiceMonitor
+module MonitorBaby
   # Checker is the base class for all checker types including ping,
   # telnet, log, web, webresponse.
   class Checker

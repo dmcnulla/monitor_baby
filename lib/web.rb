@@ -1,7 +1,7 @@
 require 'net/http'
 require 'uri'
 
-module ServiceMonitor
+module MonitorBaby
   class Web < Checker
     DEFAULT_URL = 'http://localhost:80/'
     DEFAULT_NAME = 'web_checker'
