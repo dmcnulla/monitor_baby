@@ -1,0 +1,5 @@
+default: --no-source --tags ~@wip --tags ~@slow
+slow:  --no-source --tags ~@wip
+wip: --tags @wip
+autotest: --no-source --color --format pretty --tags ~@wip
+

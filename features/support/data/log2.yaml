@@ -1,0 +1,6 @@
+type: log
+name: search_found
+log_file: logs/test.log
+entries: 
+  - ERROR
+  - BLAH
