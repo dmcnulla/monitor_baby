@@ -37,7 +37,8 @@ module MonitorBaby
       "WebTime: url = #{@url}, expected_time = #{expected_time}"
     end
 
-    def test?
+    def test?(override_time = nil)
+      @expected_time = override_time unless override_time.nil?
       start_time = Time.now.strftime('%L').to_i
       response = @http.request(Net::HTTP::Get.new(@page))
       debug_slow
