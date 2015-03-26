@@ -29,12 +29,10 @@ module MonitorBaby
     end
 
     def test?
-      begin
-        response = @http.request(Net::HTTP::Get.new(@page))
-        return response.is_a?(Net::HTTPOK)
-      rescue
-        false
-      end
+      response = @http.request(Net::HTTP::Get.new(@page))
+      return response.is_a?(Net::HTTPOK)
+    rescue
+      false
     end
   end
 end

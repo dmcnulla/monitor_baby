@@ -6,4 +6,3 @@ end
 When(/^I run the checker$/) do
   @actual_result = @obj.test?
 end
-

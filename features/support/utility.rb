@@ -1,4 +1,4 @@
 
 def to_bool(str)
-	str == 'true'
+  str == 'true'
 end

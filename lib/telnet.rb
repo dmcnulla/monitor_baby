@@ -2,7 +2,7 @@ require 'socket'
 require 'timeout'
 
 module MonitorBaby
-	# Telnet checker verifies a port is open on a host
+  # Telnet checker verifies a port is open on a host
   class Telnet < Checker
     DEFAULT_HOST = 'localhost'
     DEFAULT_PORT = 80
@@ -31,19 +31,17 @@ module MonitorBaby
     end
 
     def test?
-      begin
-        Timeout.timeout(1) do
-          begin
-            s = TCPSocket.new(@host, @port)
-            s.close
-            true
-          rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH
-            false
-          end
+      Timeout.timeout(1) do
+        begin
+          s = TCPSocket.new(@host, @port)
+          s.close
+          true
+        rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH
+          false
         end
-      rescue
-        false
       end
+    rescue
+      false
     end
   end
 end

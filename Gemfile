@@ -9,4 +9,3 @@ group :test do
   gem 'cucumber'
   gem 'webmock'
 end
-
